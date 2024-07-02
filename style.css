@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #0081a7;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.openUp {
+  position: absolute;
+  top: 16%;
+  right: 2%;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.openUp:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px 80px;
+}
+
+nav h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding-top: 25px;
+}
+
+nav h1 span {
+  color: #00afb9;
+  text-transform: uppercase;
+}
+
+nav main {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav main a {
+  text-decoration: none;
+  color: #00afb9;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  overflow: hidden;
+}
+
+.HeroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeroSection .imgContainer {
+  width: 50%;
+  height: 100vh;
+}
+
+.HeroSection .imgContainer img {
+  width: 100%;
+}
+
+.HeroSection .HeroContent {
+  width: 50%;
+}
+
+.HeroSection .HeroContent h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.HeroSection .HeroContent h1 span {
+  color: #00afb9;
+  text-transform: uppercase;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.HeroSection .HeroContent p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.ServiceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ServiceSection h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #0081a7;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.ServiceSection main {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ServiceSection main .serviceCard {
+  width: 220px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: #0081a7;
+}
+
+.ServiceSection main .serviceCard .img {
+  width: 58%;
+  height: 50%;
+  border-radius: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ServiceSection main .serviceCard .img .icon {
+  font-size: 3rem;
+  color: #00afb9;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.ServiceSection main .serviceCard .content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ServiceSection main .serviceCard .content h3 {
+  text-transform: uppercase;
+  color: yellow;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.ServiceSection main .serviceCard .content p {
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+.AboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutSection h1 {
+  text-transform: uppercase;
+  color: #00afb9;
+  font-size: 3rem;
+}
+
+.AboutSection main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AboutSection main .content {
+  width: 50%;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutSection main .content p {
+  font-size: 1.2rem;
+}
+
+.AboutSection main .imgContainer {
+  width: 50%;
+  text-align: right;
+}
+
+.AboutSection main .imgContainer img {
+  width: 80%;
+  border-radius: 25px;
+}
+
+.ContactSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContactSection .imgContainer {
+  width: 50%;
+  text-align: left;
+}
+
+.ContactSection .imgContainer img {
+  width: 80%;
+  border-radius: 25px;
+}
+
+.ContactSection main {
+  width: 50%;
+}
+
+.ContactSection main form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #0081a7;
+  padding: 10px 25px;
+}
+
+.ContactSection main form div {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.ContactSection main form div input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #00afb9;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.ContactSection main form div textarea {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #00afb9;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.ContactSection main form div input:focus {
+  border-bottom: 2px solid #00afb9;
+}
+
+.ContactSection main form div textarea:focus {
+  border-bottom: 2px solid #00afb9;
+}
+
+.ContactSection main form div label {
+  font-size: 1.2rem;
+  color: #fdfcdc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.ContactSection main form #submitContact {
+  width: 40%;
+  height: 40px;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: auto;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  border: 3px solid #0081a7;
+  background-color: white;
+  transition: 0.2s linear;
+}
+
+.ContactSection main form #submitContact:hover {
+  cursor: pointer;
+  background-color: #fdfcdc;
+  color: #0081a7;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .logo {
+  width: 30%;
+  height: 100%;
+}
+
+footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .siteMap {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .siteMap ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .siteMap ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+
+footer .siteMap ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s linear;
+}
+
+footer .siteMap ul li a:hover {
+  color: #00afb9;
+}
+
+footer .socialMedia {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .socialMedia ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .socialMedia ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+
+footer .socialMedia ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s linear;
+}
+
+footer .socialMedia ul li a:hover {
+  color: #00afb9;
+} 
+
+
