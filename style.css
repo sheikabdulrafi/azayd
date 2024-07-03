@@ -60,6 +60,16 @@ nav {
   z-index: 1000;
   background-color: white;
   padding: 10px 80px;
+  overflow: hidden;
+}
+
+nav .menu {
+  position: absolute;
+  top: 45%;
+  right: calc(var(--right) * 1%);
+  transform: translateY(-50%);
+  z-index: 10000;
+  visibility: hidden;
 }
 
 nav h1 {
@@ -105,6 +115,9 @@ section {
 .HeroSection .imgContainer {
   width: 50%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .HeroSection .imgContainer img {
@@ -156,15 +169,15 @@ section {
 
 .ServiceSection main {
   width: 100%;
-  height: 60%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
 
 .ServiceSection main .serviceCard {
-  width: 220px;
-  height: 350px;
+  width: 200px;
+  height: 325px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,9 +185,10 @@ section {
   padding: 10px;
   padding-top: 30px;
   border-radius: 20px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25),
-    inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 5px rgba(194, 194, 194, 0.25),
+    inset 2px 2px 5px rgba(230, 230, 230, 0.25);
   background-color: #0081a7;
+  margin: 10px;
 }
 
 .ServiceSection main .serviceCard .img {
@@ -220,6 +234,7 @@ section {
 }
 
 .AboutSection {
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,6 +466,126 @@ footer .socialMedia ul li a {
 
 footer .socialMedia ul li a:hover {
   color: #00afb9;
-} 
+}
 
+/* media queries */
+@media screen and (max-width: 950px) {
+  section {
+    padding: 0px 20px;
+  }
 
+  nav {
+    padding: 0px 20px;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+    padding-top: 25px;
+  }
+
+  nav main {
+    position: absolute;
+    top: 0px;
+    right: calc(var(--right) * 1px);
+    display: block;
+    height: 100vh;
+    width: 50%;
+    background-color: #0081a7;
+    padding: 15px;
+    padding-top: 50px;
+  }
+
+  nav main a {
+    color: #fdfcdc;
+    display: block;
+    font-size: 2.5rem;
+    padding: 40px 0px;
+  }
+
+  nav .menu {
+    transition: all 0.25s linear;
+    visibility: visible;
+    color: gold;
+    font-size: 1.5rem;
+  }
+
+  nav .sideMenu {
+    transition: all 0.25s linear;
+  }
+
+  .HeroSection {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .HeroSection .imgContainer {
+    width: 100%;
+  }
+
+  .HeroSection .imgContainer img {
+    width: 120%;
+  }
+
+  .HeroSection .HeroContent {
+    width: 100%;
+  }
+
+  .HeroSection .HeroContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .ServiceSection main {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .ServiceSection main .serviceCard {
+    width: 170px;
+    height: 340px;
+  }
+
+  .ServiceSection main .serviceCard .content p {
+    font-size: 0.8rem;
+  }
+
+  .ServiceSection main .serviceCard .img {
+    width: 120px;
+    height: 50%;
+  }
+
+  .AboutSection main {
+    flex-direction: column;
+  }
+
+  .AboutSection main .content {
+    width: 95%;
+  }
+
+  .AboutSection main .imgContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ContactSection .imgContainer {
+    display: none;
+  }
+
+  .ContactSection main {
+    width: 98%;
+  }
+
+  .ContactSection main h1 {
+    text-align: center;
+  }
+
+  footer > * {
+    margin: 0;
+    padding: 0;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  footer .logo {
+    display: none;
+  }
+}
