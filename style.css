@@ -234,7 +234,6 @@ section {
 }
 
 .AboutSection {
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,6 +466,160 @@ footer .socialMedia ul li a {
 footer .socialMedia ul li a:hover {
   color: #00afb9;
 }
+
+.detailedServices{
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailedServices main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailedServices main .container{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+  padding: 0px 20px;
+  border-radius: 50px;
+  margin: 30px 0px;
+}
+
+.detailedServices main .container .left{
+  width: 55%;
+}
+
+.detailedServices main .container .left p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.detailedServices main .container .right{
+  width: 28%;
+}
+
+.detailedServices main .container .right ul li{
+  font-size: 1.5rem;
+  text-decoration: none;
+    list-style-type: square;
+}
+
+.blogSection{
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogSection .bgTitle{
+  color: #0081a7;
+}
+
+.blogSection h1{
+  color: aliceblue;
+}
+
+.blogSection main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogSection main .container{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0081a7;
+  padding: 0px 20px;
+  border-radius: 50px;
+  margin: 30px 0px;
+}
+
+.blogSection main .container .left{
+  width: 55%;
+}
+
+.blogSection main .container .left p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: white
+} 
+
+.blogSection main .container .right{
+  width: 28%;
+}
+
+.blogSection main .container .right img{
+  width: 100%;
+  border-radius: 25px;
+}
+
+.careers{
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers main .job{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(240, 240, 240);
+  padding: 50px 30px;
+  border-radius: 20px;
+  margin: 30px 0px;
+}
+
+.careers main .job .left{
+  width: 70%;
+}
+
+.careers main .job .right{
+  width: 28%;
+}
+
+.careers main .job p{
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.careers main .job img{
+  width: 100%;
+  border-radius: 25px;
+}
+
+
+
 
 /* media queries */
 @media screen and (max-width: 950px) {
