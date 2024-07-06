@@ -741,4 +741,74 @@ footer .socialMedia ul li a:hover {
   footer .logo {
     display: none;
   }
+
+  .detailedServices h1{
+    font-size: 1.75rem;
+  }
+
+  .detailedServices main .container{
+    height: auto;
+
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .detailedServices main h1{
+    font-size: 2rem;
+  }
+
+  .detailedServices main .container .left{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .blogSection main .container:nth-child(odd){
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .blogSection main .container:nth-child(even){
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .blogSection main .container .left{
+    width: 100%;
+    padding: 10px 15px;
+  }
+  
+  .blogSection main .container .right{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .blogSection main .container{
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .careers main .job{
+    flex-direction: column;
+  }
+
+  .careers main .job h1{
+    text-align: center;
+  }
+
+  .careers main .job .left{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .careers main .job .right{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .careers main .job p{
+    width: 100%;
+    font-size: 1rem;
+  }
 }
